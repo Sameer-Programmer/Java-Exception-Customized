@@ -1,0 +1,27 @@
+package Exectionpractice;
+import java.lang.invoke.StringConcatException;
+// Agenda to implement exception
+class SeException extends Exception {
+	SeException(String s){
+		super(s);
+	}
+}
+public class Test4 {
+	public static void main(String[] args) {
+		
+		String s = "sameer";
+		String s2 = "sameer";
+		try {
+			System.out.println(s.length());	
+			if(s==s2) {
+				throw new SeException("from parent class constructor");
+			}
+		}catch(SeException se ) {
+			System.out.println("Exception Handled ");
+			System.out.println(se);
+			
+		}
+	
+	}
+}
+
