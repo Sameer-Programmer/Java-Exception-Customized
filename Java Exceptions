@@ -1,0 +1,22 @@
+package Exectionpractice;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		
+		int a = 10;
+		try {
+			int j = a/0;
+		}catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("Exception-Handled-Successfully"+ e);
+		}
+
+	}
+
+}
+=================================================
+Output 
+6
+Exception Handled 
+Exectionpractice.SeException: from parent class constructor
